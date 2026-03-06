@@ -3,7 +3,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18842842.svg)](https://doi.org/10.5281/zenodo.18842842)
 ![Status](https://img.shields.io/badge/Registry-LOCKED-purple) ![Accuracy](https://img.shields.io/badge/Match-99.95%25-green)
 
-> **"Remember that I gave my best."**
 
 This repository provides the formal computational validation for the **Scalar Radiance Law (SRL)**. It focuses on the forensic analysis of Cosmic Microwave Background (CMB) residuals, proving the law's predictive power across Planck and WMAP data sets.
 
