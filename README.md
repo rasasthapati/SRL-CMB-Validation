@@ -37,7 +37,6 @@ The validation audit analyzes the universe's background temperature as a determi
 ---
 
 ## 🛠 Repository Assets
-* **`Scalar Radiance Law.pdf`**: The theoretical foundation and derivation of the law (28 pages).
 * **`SRL_CMB_Validation.pdf`**: The 231-page forensic audit of CMB polarization and frequency residuals.
 * **`SRL_CMB_Validation.ipynb`**: Jupyter notebook for HEALPix map processing, mask application, and residual histogram generation.
 
