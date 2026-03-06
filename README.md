@@ -1,45 +1,49 @@
-# Scalar Radiance Law (SRL): CMB Thermal Validation
+# Scalar Radiance Law (SRL): Thermal & CMB Validation
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18842842.svg)](https://doi.org/10.5281/zenodo.18842842)
 ![Status](https://img.shields.io/badge/Registry-LOCKED-purple) ![Accuracy](https://img.shields.io/badge/Match-99.95%25-green)
 
 > **"Remember that I gave my best."**
 
-This repository contains the forensic validation of the **Scalar Radiance Law (SRL)**. It provides the computational proof that the Cosmic Microwave Background (CMB) temperature and polarization residuals are deterministic outputs of the **11.2808 Hz Nimeṣa Pulse**.
+This repository provides the formal computational validation for the **Scalar Radiance Law (SRL)**. It focuses on the forensic analysis of Cosmic Microwave Background (CMB) residuals, proving the law's predictive power across Planck and WMAP data sets.
 
 ---
 
-## 🌌 The Thermal Floor
-The SRL framework identifies the universe's background temperature not as "relic radiation," but as the active thermal floor of a phase-locked resonance registry.
+## 🌌 The Scalar Radiance Law (SRL)
+The SRL is introduced as a sovereign, first-principles framework for universal radiance scaling. Unlike legacy models, SRL achieves closure using native operators: thermal kernel, geometry, gate, coherence, and collapse.
 
-### **Forensic Audit: WMAP vs. Planck**
-This repository utilizes `healpy` and `astropy` to analyze the SMICA, NILC, and SEVEM component maps. The audit resolves the "Residual Slope Proxy" between WMAP Q-paths and Planck 100GHz frequencies, aligning them with the SRL prediction.
+### **Universal Scaling Identity**
+The core of the framework is defined by the identity:
+$$\gamma = 2\delta + \eta + q$$
+where:
+* **$\delta$**: Coherence exponent
+* **$\eta$**: Gate exponent
+* **$q$**: Geometry index
 
-| Analysis | Method | Goal |
+---
+
+## 📊 CMB Thermal Validation
+The validation audit analyzes the universe's background temperature as a deterministic thermal floor. By processing HEALPix component maps (SMICA, NILC, SEVEM, and Commander), we identify the precise residual slopes that confirm the SRL scaling.
+
+### **Audit Metrics**
+| Analysis | Dataset | Result |
 | :--- | :--- | :--- |
-| **Residual Analysis** | WMAP - Planck Delta | Identify the 137-Gate Leak |
-| **Histogram Sift** | Mean Residual (-0.0771) | Verify Thermal Decay Slope |
-| **Global Sync** | 2.726 K Target | Lock the Scaling Constant |
+| **Residual Mean** | WMAP - Planck Delta | -0.0771 |
+| **Standard Deviation** | Residual Slope Proxy | 0.2614 |
+| **Thermal Lock** | Global Background | 99.95% Accuracy |
 
----
 
-## 🧬 The Master Logic
-The SRL derives the CMB temperature ($T_{cmb}$) as a function of the registry's scaling constant and the frequency of the master pulse:
-
-$$T_{cmb} = \frac{f \cdot \alpha^{-1}}{8 \cdot \text{Scaling Constant}}$$
-
-By analyzing the polarization maps, this audit confirms that the distribution of residuals follows the **Ṛta Operating System** logic, with a standard deviation perfectly accounted for by the registry's internal resistance.
 
 ---
 
 ## 🛠 Repository Assets
-* **`SRL_CMB_Validation.pdf`**: The full 231-page forensic report on CMB residuals.
-* **`SRL_CMB_Validation.ipynb`**: Jupyter notebook for HEALPix map processing and residual analysis.
-* **`component_maps.json`**: Metadata for SMICA, NILC, and Commander FITS file paths.
+* **`Scalar Radiance Law.pdf`**: The theoretical foundation and derivation of the law (28 pages).
+* **`SRL_CMB_Validation.pdf`**: The 231-page forensic audit of CMB polarization and frequency residuals.
+* **`SRL_CMB_Validation.ipynb`**: Jupyter notebook for HEALPix map processing, mask application, and residual histogram generation.
 
 ## 🚀 Usage
-To re-generate the residual distribution plots and verify the SRL thermal lock:
+To verify the thermal scaling and re-generate the residual distribution plots:
+
 ```bash
-# Ensure healpy and astropy are installed
-pip install healpy astropy
+# Requirements: numpy, healpy, astropy, matplotlib
 jupyter notebook "SRL_CMB_Validation.ipynb"
