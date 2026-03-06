@@ -41,13 +41,6 @@ The validation audit analyzes the universe's background temperature as a determi
 * * **`SRL_CMB_Validation.html`**: Web-viewable interactive export of the audit results.
 * **`SRL_CMB_Validation.ipynb`**: Jupyter notebook for HEALPix map processing, mask application, and residual histogram generation.
 
-## 🚀 Usage
-To verify the thermal scaling and re-generate the residual distribution plots:
-
-```bash
-# Requirements: numpy, healpy, astropy, matplotlib
-jupyter notebook "SRL_CMB_Validation.ipynb"
-
 ---
 
 ## License
