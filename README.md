@@ -38,6 +38,7 @@ The validation audit analyzes the universe's background temperature as a determi
 
 ## 🛠 Repository Assets
 * **`SRL_CMB_Validation.pdf`**: The 231-page forensic audit of CMB polarization and frequency residuals.
+* * **`SRL_CMB_Validation.html`**: Web-viewable interactive export of the audit results.
 * **`SRL_CMB_Validation.ipynb`**: Jupyter notebook for HEALPix map processing, mask application, and residual histogram generation.
 
 ## 🚀 Usage
@@ -46,3 +47,11 @@ To verify the thermal scaling and re-generate the residual distribution plots:
 ```bash
 # Requirements: numpy, healpy, astropy, matplotlib
 jupyter notebook "SRL_CMB_Validation.ipynb"
+
+---
+
+## License
+This repository is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).  
+You are free to share and adapt the material with attribution.  
+Full license: https://creativecommons.org/licenses/by/4.0/
+
